@@ -6,11 +6,15 @@ module.exports = {
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
+            "impliedStrict":true,
             "experimentalObjectRestSpread": true,
             "jsx": true
         },
         "sourceType": "module"
     },
+    "extends":[
+        "eslint:recommended", "plugin:react/recommended"
+    ],
     "plugins": [
         "react"
     ],
