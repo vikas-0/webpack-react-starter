@@ -18,6 +18,7 @@ and then you can try editing source code in 'src' folder
 
 To build the package , run
 >yarn build
+
 package will be built into 'dist' folder
 
 ## Features
