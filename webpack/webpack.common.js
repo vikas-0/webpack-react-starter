@@ -24,6 +24,15 @@ module.exports = {
     },
     module: {
         rules: [
+            {   enforce: "pre",
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                loader: "eslint-loader",
+                options:{
+                    fix:true,
+                    emitWarning:true
+                }
+            },
             {   test: /\.(js|jsx)$/, 
                 exclude: /node_modules/, 
                 loader: 'babel-loader',
@@ -32,7 +41,16 @@ module.exports = {
                     cacheDirectory: true
                 } 
             },
-            
+            {   test: /\.(png|jpg|gif)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name:'images/[name].[ext]?[hash]'
+                    }  
+                  }
+                ]
+            }
         ]
     },
 }
