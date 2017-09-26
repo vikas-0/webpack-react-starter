@@ -31,6 +31,6 @@ package will be built into 'dist' folder
 - CSS loader
 
 ### Production
--Separate css and js minified bundle
--React JS linked from CDN to use cached packages
+- Separate css and js minified bundle
+- React JS linked from CDN to use cached packages
 
