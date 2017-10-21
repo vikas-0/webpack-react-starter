@@ -33,14 +33,6 @@ module.exports = {
                     emitWarning:true
                 }
             },
-            {   test: /\.(js|jsx)$/, 
-                exclude: /node_modules/, 
-                loader: 'babel-loader',
-                options: {
-                    presets:['es2015', 'react'],
-                    cacheDirectory: true
-                } 
-            },
             {   test: /\.(png|jpg|gif)$/,
                 use: [
                   {
