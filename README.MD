@@ -1,11 +1,14 @@
-# Webpack ReactJS starter
+# Do not use
+This repo is very old and haven't been updated since a very long time. Also this repo is created for learning purpose and there and not intended to use in production.
+
+## Webpack ReactJS starter
 A Starter template for React JS using webpack adapted for developer and production builds.
 
 [create-react-app](https://github.com/facebookincubator/create-react-app) is a very good tool for starting a react js app. But lot of configurations are abstracted and hidden in it. If you need different configurations you have to set up your own webpack.
 
 This project is plain simple webpack implementation with ReactJS, ES6 and JSX support with some other features which can be easily removed (if you don't want it) or configured.
 
-## Installation
+### Installation
 
 Clone or download this repository  
 Then run
@@ -21,16 +24,16 @@ To build the package , run
 
 package will be built into 'dist' folder
 
-## Features
+### Features
 - Different webpack configuration file for production and development to get best of both worlds.
 
-### Development
+#### Development
 - Hot Reloading
 - Resourse hashing to prevent caching probilem while testing
 - ES6 and JSX support
 - CSS loader
 
-### Production
+#### Production
 - Separate css and js minified bundle
 - React JS linked from CDN to use cached packages
 
